@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-   <h2>Form Validation</h2>
-   <form name="myForm"action=""onsubmit="validateForm()">
-    Name: <input type="text"name="fname">
-    <input type="submit"value="Submit">
-   </form>
-    <script>
-    function validateForm() {
-        letx = document.forms["myForm"]["fname"].value;
-    if(x =="") {
-        alert("Name must be filled out");
-        return false;
-    }
-}
+    <h2>JavaScript Array</h2>
+    <p id="demo"></p>
+    <script>//Creating an array
+        const cars = ["BMW", "Audi", "Scoda", "Benz"];
+        let txt = "<ul>";
+        cars.forEach(myFunc); //Looping the Array
+
+        txt += "</ul>";
+        document.getElementById("demo").innerHTML = txt;
+        function myFunc(element) {
+            txt += "<li>" + element + "</li>";
+        }
     </script>
-    
+
 </body>
+
 </html>
