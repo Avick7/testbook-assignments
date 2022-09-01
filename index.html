@@ -9,18 +9,18 @@
 </head>
 
 <body>
-    <h2>JavaScript Array</h2>
-    <p id="demo"></p>
-    <script>//Creating an array
-        const cars = ["BMW", "Audi", "Scoda", "Benz"];
-        let txt = "<ul>";
-        cars.forEach(myFunc); //Looping the Array
-
-        txt += "</ul>";
-        document.getElementById("demo").innerHTML = txt;
-        function myFunc(element) {
-            txt += "<li>" + element + "</li>";
-        }
+    <script>
+        var promo = new Promise(function (resolve, reject) {
+            const x = "i will drink tea"; 
+            const y = "i will drink coffe";
+            if (x === y) {
+                resolve();
+            } else {
+                reject();
+            }
+        }); 
+        promo.then(function () { console.log('Success, No error found'); }).catch(function () 
+        { console.log('Some error has occurred'); });
     </script>
 
 </body>
